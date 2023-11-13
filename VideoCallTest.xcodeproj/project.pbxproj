@@ -11,6 +11,11 @@
 		4C3748A42B026A510023A810 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3748A32B026A510023A810 /* ContentView.swift */; };
 		4C3748A62B026A530023A810 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C3748A52B026A530023A810 /* Assets.xcassets */; };
 		4C3748A92B026A530023A810 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C3748A82B026A530023A810 /* Preview Assets.xcassets */; };
+		4C3748B12B026B9F0023A810 /* StreamVideo in Frameworks */ = {isa = PBXBuildFile; productRef = 4C3748B02B026B9F0023A810 /* StreamVideo */; };
+		4C3748B32B026B9F0023A810 /* StreamVideoSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4C3748B22B026B9F0023A810 /* StreamVideoSwiftUI */; };
+		4C3748B62B026BF80023A810 /* VideoCallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3748B52B026BF80023A810 /* VideoCallApp.swift */; };
+		4C3748B82B026CBB0023A810 /* ParticipantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3748B72B026CBB0023A810 /* ParticipantsView.swift */; };
+		4C3748BA2B026D030023A810 /* FloatingParticipantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3748B92B026D030023A810 /* FloatingParticipantView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,9 @@
 		4C3748A32B026A510023A810 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4C3748A52B026A530023A810 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C3748A82B026A530023A810 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4C3748B52B026BF80023A810 /* VideoCallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCallApp.swift; sourceTree = "<group>"; };
+		4C3748B72B026CBB0023A810 /* ParticipantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantsView.swift; sourceTree = "<group>"; };
+		4C3748B92B026D030023A810 /* FloatingParticipantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingParticipantView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C3748B32B026B9F0023A810 /* StreamVideoSwiftUI in Frameworks */,
+				4C3748B12B026B9F0023A810 /* StreamVideo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +61,7 @@
 		4C3748A02B026A510023A810 /* VideoCallTest */ = {
 			isa = PBXGroup;
 			children = (
+				4C3748B42B026BE30023A810 /* VideoCall */,
 				4C3748A12B026A510023A810 /* VideoCallTestApp.swift */,
 				4C3748A32B026A510023A810 /* ContentView.swift */,
 				4C3748A52B026A530023A810 /* Assets.xcassets */,
@@ -65,6 +76,16 @@
 				4C3748A82B026A530023A810 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4C3748B42B026BE30023A810 /* VideoCall */ = {
+			isa = PBXGroup;
+			children = (
+				4C3748B52B026BF80023A810 /* VideoCallApp.swift */,
+				4C3748B72B026CBB0023A810 /* ParticipantsView.swift */,
+				4C3748B92B026D030023A810 /* FloatingParticipantView.swift */,
+			);
+			path = VideoCall;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +104,10 @@
 			dependencies = (
 			);
 			name = VideoCallTest;
+			packageProductDependencies = (
+				4C3748B02B026B9F0023A810 /* StreamVideo */,
+				4C3748B22B026B9F0023A810 /* StreamVideoSwiftUI */,
+			);
 			productName = VideoCallTest;
 			productReference = 4C37489E2B026A510023A810 /* VideoCallTest.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +136,9 @@
 				Base,
 			);
 			mainGroup = 4C3748952B026A510023A810;
+			packageReferences = (
+				4C3748AF2B026B9F0023A810 /* XCRemoteSwiftPackageReference "stream-video-swift" */,
+			);
 			productRefGroup = 4C37489F2B026A510023A810 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C3748B62B026BF80023A810 /* VideoCallApp.swift in Sources */,
 				4C3748A42B026A510023A810 /* ContentView.swift in Sources */,
+				4C3748B82B026CBB0023A810 /* ParticipantsView.swift in Sources */,
+				4C3748BA2B026D030023A810 /* FloatingParticipantView.swift in Sources */,
 				4C3748A22B026A510023A810 /* VideoCallTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +306,8 @@
 				DEVELOPMENT_TEAM = 3YWFK2YH9J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "i need this";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "i need this too";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +337,8 @@
 				DEVELOPMENT_TEAM = 3YWFK2YH9J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "i need this";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "i need this too";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +379,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4C3748AF2B026B9F0023A810 /* XCRemoteSwiftPackageReference "stream-video-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/stream-video-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4C3748B02B026B9F0023A810 /* StreamVideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C3748AF2B026B9F0023A810 /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideo;
+		};
+		4C3748B22B026B9F0023A810 /* StreamVideoSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C3748AF2B026B9F0023A810 /* XCRemoteSwiftPackageReference "stream-video-swift" */;
+			productName = StreamVideoSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4C3748962B026A510023A810 /* Project object */;
 }

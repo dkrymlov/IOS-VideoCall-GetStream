@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@main
+
 struct VideoCallTestApp: App {
     var body: some Scene {
         WindowGroup {
